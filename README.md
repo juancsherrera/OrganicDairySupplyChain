@@ -3,6 +3,9 @@ Finding opportunities for locating new businesses: base on considerations of sup
 Juan C. S. Herrera
 February, 2019
 
+
+![](README_figs/usamapall.gif)
+
 Title: Finding opportunities for locating new businesses: base on considerations of supply chain and location of customers. The case of organic dairy business in the USA.
 
 Motivation and description of the problem: Locating a new business (or a new branch) requires minimizing costs of running the business, and maximizing profits. In this project I am assuming that the costs of inputs and the final costs charged to consumers are the same all over the USA, this is supported by economic theories of arbitrage. With this restriction, in order to minimize costs of both the supply chain of input materials and getting access to consumers, a new business would need to choose a geographic location that minimizes the distance to both consumers and suppliers.
