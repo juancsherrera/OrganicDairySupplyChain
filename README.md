@@ -3,8 +3,7 @@ Finding opportunities for locating new businesses: base on considerations of sup
 Juan C. S. Herrera
 February, 2019
 
-
-![](TDISupplychain/README_figs/usaodsupplychain.gif)
+![alt text](https://github.com/juancsherrera/TDISupplychain/blob/master/README_figs/usaodsupplychain.gif)
 
 Title: Finding opportunities for locating new businesses: base on considerations of supply chain and location of customers. The case of organic dairy business in the USA.
 
