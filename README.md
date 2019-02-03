@@ -1,4 +1,4 @@
-Finding opportunities for locating new businesses: base on considerations of supply chain and location of customers. The case of organic dairy business in the USA.
+Finding opportunities for locating new businesses: The case of organic dairy business in the USA.
 ================
 Juan C. S. Herrera
 February, 2019
