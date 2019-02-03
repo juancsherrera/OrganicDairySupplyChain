@@ -21,7 +21,6 @@ Shortcomings: I plan to expand the analysis by including data on average cost of
 
 Analysis
 --------
-
 ``` r
 dairyp<-as.data.frame(read.csv(paste0(directx,"/lsallUSAgeo.csv"), header = TRUE, stringsAsFactors = FALSE, fileEncoding="latin1"))
 conn <- dbConnect(RSQLite::SQLite(), dbname="organics.sqlite")
@@ -51,8 +50,6 @@ dairypgeo<-dairypgeo[dairypgeo$year <= 2015,]
   }  out-
 }
 getwd()
-
-
 
 #Create vector with all the address values
 alloperations$opadresscom <- paste(alloperations$opPA_line1 , alloperations$opPA_line2 , alloperations$opPA_city , alloperations$opPA_state , alloperations$opPA_country , alloperations$opPA_zip, sep=" ")
@@ -479,13 +476,6 @@ for(i in 1:dimforloop)
 
 lenghtprodhan<-as.matrix(dim(connectingmap))[1,1]
 
-
-
-
-
-
-
-
 remove(a,b)
 head(connectingmap)
 ##Add connections Handler-Whole Foods
@@ -529,12 +519,9 @@ connectingmap$year<-as.numeric(as.character(connectingmap$year))
 connectingmap$op_id<-as.character(connectingmap$op_id)
 connectingmap<-connectingmap[connectingmap$lon>=-140,]
 
-
-
 #remove HI
 nodes_supply_chain<-nodes_supply_chain[nodes_supply_chain$lon>=-140,]
 #head(nodes_supply_chain)
-
 
 #Farmer - Handler network
 
@@ -542,7 +529,6 @@ remove(fig1fig,fig1tot)
 usa <- map_data("state")
 fig1tot<-connectingmap[connectingmap$year<=2005,]
 fig1tot<-fig1tot[fig1tot$node_type!="supermarket",]
-
 
 theme_base(base_size = 200)
 fig1fig <- ggplot() + geom_polygon(data = usa, aes(x=long, y = lat, group = group, label = "Fig 1"), fill = "white", color = "#9fa9a3") + coord_fixed(1.3) #load USA map data
@@ -552,12 +538,6 @@ fig1fig <- fig1fig + theme_map()
 fig1fig <- fig1fig + ggtitle(label = c("Simulated Organic Dairy Supply Chain (Farmer - Handler Network 2005"), subtitle = c("Figure 1. 2005           "))
 fig1fig
 ggsave((paste0(directx,"/f_h_fig1_2005.eps")))
-
-
-
-
-
-
 
 #Supply Chain
 
@@ -573,8 +553,6 @@ fig1fig <- fig1fig + ggtitle(label = c("Simulated Organic Dairy Supply Chain. 20
 fig1fig
 ggsave((paste0(directx,"/fig1_2005.eps")))
 
-
-
 #Import USA map data
 remove(fig2fig,fig2tot)
 usa <- map_data("state")
@@ -588,8 +566,6 @@ fig2fig <- fig2fig + ggtitle(label = c("Simulated Organic Dairy Supply Chain. 20
 fig2fig
 ggsave((paste0(directx,"/fig2_2015.eps")))
 
-
-
 fig2a <- fig1fig + coord_fixed(xlim = c(-78.006,    -70.006), ylim = c(38.2128, 43.2128)) 
 fig2a
 ggsave((paste0(directx,"/2005_SC_detail_NYC.eps")))
@@ -598,13 +574,6 @@ ggsave((paste0(directx,"/2005_SC_detail_NYC.eps")))
 fig2b <- fig2fig + coord_fixed(xlim = c(-78.006,    -70.006), ylim = c(38.2128, 43.2128)) 
 fig2b
 ggsave((paste0(directx,"/2015_SC_detail_NYC.eps")))
-
-
-
-
-
-
-
 
 #Create animated plot, this creates an animation with one frame per year.
 theme_base(base_size = 200)
@@ -626,5 +595,5 @@ beep()
 tail(connectingmap,100)
 #remove(connectingmap)
 
-#crea
+
 ```
