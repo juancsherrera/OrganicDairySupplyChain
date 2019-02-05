@@ -3,6 +3,8 @@ Finding opportunities for locating new businesses: The case of organic dairy in 
 Juan C. S. Herrera
 February, 2019
 
+
+
 ![alt text](https://github.com/juancsherrera/TDISupplychain/blob/master/README_figs/usaodsupplychain.gif)
 
 Title: Finding opportunities for locating new businesses, The case of organic dairy business in the USA.
@@ -18,6 +20,7 @@ Methods: I use network science methodologies to infer dynamic supply chains that
 Conclusions: Farmer level: At the farmer level the best bet is to locate as close as possible to a handling facility. It would help to locate close to a newer handling facility with fewer handlers around as your business will have less competition. Handler Level: The best bet is to locate in the midpoint between a critical mass of farmers and a supermarket. A very promising area is close to the northeastern coast but not directly on the coast as it will be too far from farmers. Supermarket level: The best bet is to locate close to handlers. However this is a problem of the design as we don't have data on consumers other than current supermarkets. Hence more data is needed for a conclusive solution.
 
 Shortcomings: I plan to expand the analysis by including data on average cost of land in order to come up with a cost function that strengthens this analysis. The GPS coordinates for all operations (farmers, handlers, and supermarkets) do not include the size of the operation this is a severe shortcoming as being close to a bigger operation of the competence will make it harder to compete. The connections are euclidean and don't consider actual traveled distance using highways. This can be corrected with more data (or more time to get this from the Google Maps API without exceeding the free quota).
+
 
 Analysis
 --------
