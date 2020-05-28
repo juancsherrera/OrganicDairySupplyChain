@@ -1,9 +1,4 @@
-Finding opportunities for locating new businesses: The case of organic dairy in the USA.
-================
-Juan C. S. Herrera
-February, 2019
-
-
+## Finding opportunities for locating new businesses: The case of organic dairy in the USA.
 
 ![alt text](https://github.com/juancsherrera/TDISupplychain/blob/master/README_figs/usaodsupplychain.gif)
 
